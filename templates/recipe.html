@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{name}} | Recipe Book{% endblock %}
+{% block content %}
+    <h1>Name: {{name}}</h1>
+    <h1>Cook Time: {{cooktime}} minutes</h1>
+    <h1>Ingredients:</h1>
+    {% for item in ingredients %}
+        <p>{{item}}</p>
+    {% endfor %}
+{% endblock %}
